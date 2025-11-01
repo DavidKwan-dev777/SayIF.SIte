@@ -5,64 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SayIF</title>
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-    <style>
-        body{background-color: white;
-        font-size: larger;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin: 10;
-        padding: 10;
-      
-        }
-        img{margin-bottom: 2px;
-        margin-top: 30px;}
-         h1{color: rgb(8, 202, 8)
-            ;
-            margin-bottom: 2px;
-            margin-top: 0;
-        }
-        h6{color: rgb(8, 202, 8);
-        margin-top: 0;}
-        center{text-align: center;}
-
-        button{
-            background-color:rgb(8, 202, 8) ;
-            color: white;
-            border: none;
-              padding: 10px 20px;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-        }
-         button:hover {
-      background-color: rgb(6, 160, 6);
-    }
-
-    p {
-      margin-top: 20px;
-      font-weight: bold;
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<center><img src="if logo.png" height="50"> <h1>SayIF</h1>
-    <h6>Site de conversa para os estudantes IF!</h6>
-    <button onclick="AbrirDialogo()">digite algo</button>
-    <p id="mensagem"></p>
-    <script>
-    function AbrirDialogo() {
-        let texto = prompt("digite sua mensagem");
-    if (texto) {
-        document.getElementById("mensagem").innerText = "você disse: " + texto;
-    }
-        else {
-            document.getElementById("mensagem").innerText = "nenhuma mensagem digitada";
-}
-    
-        
 
-    }
-    </script>
-</center>   
+<div class="header">
+
+<img src="if logo.png" height="100"> <h1>SayIF</h1>
+    <h6>Site de conversa para os estudantes IF!</h6>
+
+</div>
+        
+    
+<div class="formbox">
+
+
+
+<h2 class="title">Crie seu Perfil</h2>
+<form action="" method="get">
+
+<input type="text" name="name" placeholder="Dê um nome ao seu perfil">
+<input type="password" name="senha" placeholder="Qual sua senha">
+
+
+</form>
+
+
+</div>
+    
+    
+  
     
 </body>
 </html>

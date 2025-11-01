@@ -6,7 +6,7 @@
 }
 body{
   background: linear-gradient(1000deg,
-green, white);
+#0a7f70, #024c43);
  display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,4 +59,5 @@ body, textarea{
   margin-top: 50px;
 
 }
+
 

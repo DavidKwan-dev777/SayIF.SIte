@@ -70,15 +70,20 @@ margin-bottom: 10px;
   margin-bottom: 0;
   font-size: 75px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 
 }
 .header h6{
   margin-top: 0;
   color: white;
 }
-.header img{
-  margin-bottom: 0;
-  margin-top: 50px;
+.LogoIF{
+height: 1em;
+width: auto;
+vertical-align: middle;
+
 
 }
-

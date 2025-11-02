@@ -23,16 +23,39 @@
 
 
 <h2 class="title">Crie seu Perfil</h2>
-<form onsubmit="event.preventDefault(); window.location.href='https://www.youtube.com/watch?v=RYmCjfX7viE'">
-  <input type="text" name="name" placeholder="Dê um nome ao seu perfil">
-  <input type="password" name="senha" placeholder="Qual sua senha">
-  <button type="submit">Criar conta</button>
+<form id="formulario">
+
+<input type="text" name="name" placeholder="Dê um nome ao seu perfil" required>
+<input type="password" name="senha" placeholder="Qual sua senha" required>
+<button type="submit">
+    Criar conta
+</button>
+
 </form>
 
 
 </div>
 </div>
 
+<script>
+
+const form = document.getElementById("formulario");
+
+ form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+   if (form.checkValidity()) {
+      window.location.href = "https://www.youtube.com/watch?v=RYmCjfX7viE";
+    } 
+    // Se não estiver, o navegador mostra os avisos padrões
+  });
+
+
+
+
+
+</script>
+
 
 
 
@@ -40,6 +63,11 @@
 
     
     
+  
+    
+</body>
+</html>
+
 
 
 

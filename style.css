@@ -132,62 +132,39 @@ input {
 /* 🔹 MEDIA QUERY PARA CELULARES (ATÉ 600px) 🔹 */
 @media (max-width: 600px) {
 
-  html, body {
-    height: auto;
-    overflow-x: hidden; /* Evita scroll horizontal */
+  body {
+    padding: 10px;
   }
 
-  body {
-    padding: 10px; /* Padding interno seguro */
+  .shadowbox {
+    width: 90%;       /* largura menor que 100% */
+    max-width: 300px; /* largura máxima */
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;   /* centraliza */
+  }
+
+  .formbox {
+    width: 90%;       /* largura menor que 100% */
+    max-width: 350px; /* largura máxima */
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+    margin: 0 auto;   /* centraliza */
+  }
+
+  input, .formbox button {
+    width: 100%;      /* ocupam toda a largura da formbox, não da tela */
+    max-width: none;
   }
 
   .header h1 {
-    font-size: 12vw;
+    font-size: 10vw;
     text-align: center;
   }
 
   .header h6 {
     font-size: 4vw;
     text-align: center;
-  }
-
-  .formbox {
-    width: 100%; /* ocupa toda largura disponível */
-    max-width: 100%;
-    height: auto;
-    padding: 15px;
-    gap: 10px;
-  }
-
-  .shadowbox {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-
-  h2 {
-    font-size: 6vw;
-  }
-
-  input {
-    width: 100%;
-    max-width: 100%;
-    font-size: 4vw;
-    padding: 12px;
-    margin: 5px 0; /* reduz margens laterais */
-  }
-
-  .formbox button {
-    width: 100%;
-    max-width: 100%;
-    font-size: 4.5vw;
-    padding: 12px;
-    border-radius: 15px;
-    margin: 10px 0 0 0;
-  }
-
-  .LogoIF {
-    height: 1.2em;
   }
 }

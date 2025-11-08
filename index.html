@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta name="description" content="Site criado para comunicação dos alunos IF.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SayIF</title>
+    <link rel="stylesheet" href="SayIFstyle.css">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="header">
-
- <h1>Say<img src="if logo.png" height="100" class="LogoIF"></h1>
-    <h6>Site de conversa para os estudantes IF!</h6>
-
-</div>
-   
-<div class="shadowbox">
-
-    <div class="formbox">
-
-
-
-<h2 class="title">Crie seu Perfil</h2>
-<form id="formulario">
-
-<input type="text" name="name" placeholder="Dê um nome ao seu perfil" required>
-<input type="password" name="senha" placeholder="Qual sua senha" required>
-<button type="submit">
-    Criar conta
-</button>
-
-</form>
-
-
-</div>
-</div>
-
-<script>
-
-const form = document.getElementById("formulario");
-
- form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-   if (form.checkValidity()) {
-      window.location.href = "https://www.youtube.com/watch?v=RYmCjfX7viE";
-    } 
-    // Se não estiver, o navegador mostra os avisos padrões
-  });
-
-
-
-
-
-</script>
-
-
-
-
     
+    <header> <!-- Título do site + intúito -->
+        <h1>
+            Say
+            <img src="if logo.png" alt="logo do IFMA complementando o Say">
+        </h1>
+        <h6>Um site criado por estudantes para comunicação dos alunos IF.</h6>
+    </header>
 
-    
-    
-  
-    
+    <main>
+
+        <section> <!-- Formulário -->
+            <div class="Shadowbox">
+                <div class="Formbox">
+                                <h2>Crie seu perfil</h2>
+
+                          <form id="formulario">
+                                  <input 
+                                   type="text" 
+                                   name="nomeperfil" 
+                                   id="Np" 
+                                   placeholder="Dê um nome ao seu perfil..."
+                                   required
+                                   ><br>
+
+                                 <input 
+                                  type="password"
+                                  name="senhaperfil"
+                                  id="Sp" 
+                                  placeholder="Crie uma senha"
+                                 required
+                                 ><br>
+
+                              <button type="submit">Criar perfil</button>
+                         </form>
+                  </div>
+            </div>
+            <script>
+                const form = document.getElementById("formulario");
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    if (form.checkValidity()) {
+                    window.location.href="https://www.youtube.com/watch?v=RYmCjfX7viE"
+                    }
+                })
+            </script>
+           
+        </section>
+    </main>
+
+    <footer> <!--Direitos do site-->
+        <small>
+                &copy;2025 SayIF. Desenvolvido por David Kauan Dias Cordeiro. Todos os direitos reservados.
+        </small>
+    </footer>
+
 </body>
 </html>
-
-
 
 

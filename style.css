@@ -1,170 +1,122 @@
-::after,
-::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  max-width: 100vw;
-  height: 75vw;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background: linear-gradient(1000deg,#0a7f70, #024c43);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-body, textarea {
-  font-family: sans-serif;
-}
 
 @font-face {
-  font-family:'epocapro';
-  src: url(epocapro-light.otf);
+    font-family: 'epoca';
+    src: url(epocapro-light.otf);
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 50, 0;
+
+
+*{
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body /*corpo do site*/
+{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: auto;
+    background: linear-gradient(100deg, #0a7f70, #024c43);
+}
+header
+{
+    background-color: #11472a;
+    padding-bottom: 20px;
 }
 
-.shadowbox {
-  background-color: rgba(0, 0, 0, 0.571);
-  width: 25vw;
-  height: 30vw;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.formbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #04453c;
-  border-radius: 20px;
-  width: 30vw;
-  height: 35vw;
-  padding: 30px;
-  gap: 15px;
-  box-sizing: border-box;
-}
-
-h2 {
-  color: #00e5c7;
-  font-size: 2vw;
-  margin-bottom: 10px;
-}
-
-input {
-  margin: 0 auto;
-  width: 25vw;
-  max-width: 190px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-  text-align: center;
-  display: block;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.formbox button {
-  color: white;
-  background-color: green;
-  padding: 10px 20px;
-  width: 20vw;
-  max-width: 300px;
-  height: 50px;
-  font-size: 18px;
-  border-radius: 20px;
-  margin-top: 5px;
-  cursor: pointer;
-  border: none;
-  display: block;
-  margin: 10px auto 0 auto;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.header h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 10vw;
-  color: #00e5c7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.header h6 {
-  margin-top: 0;
-  font-size: 2vw;
-  color: white;
-  font-family: 'epocapro';
-}
-
-.LogoIF {
-  height: 1em;
-  width: auto;
-  vertical-align: middle;
-}
-
-/* 🔹 MEDIA QUERY PARA CELULARES (ATÉ 600px) 🔹 */
-@media (max-width: 600px) {
-
-  body {
-    padding: 10px;
-  }
-
-  .shadowbox {
-    width: 90%;       /* largura menor que 100% */
-    max-width: 300px; /* largura máxima */
-    height: auto;
-    padding: 10px;
-    margin: 0 auto;   /* centraliza */
-  }
-
-  .formbox {
-    width: 90%;       /* largura menor que 100% */
-    max-width: 350px; /* largura máxima */
-    height: auto;
-    padding: 15px;
+h1 /*título do site*/
+{
+    color: rgb(116, 216, 202);
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin: 0 auto;   /* centraliza */
-  }
-
-  input, .formbox button {
-    width: 100%;      /* ocupam toda a largura da formbox, não da tela */
-    max-width: none;
-  }
-
-  .header h1 {
-    font-size: 10vw;
-    text-align: center;
-  }
-
-  .header h6 {
-    font-size: 4vw;
-    text-align: center;
-  }
+    height: 100%;
+    width: 100%;
 }
+h1 img /*símbolo IF ao lado do título*/
+{
+    height: 1em;
+    width: auto;
+}
+h6 /*Subtítulo*/
+{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'epoca';
+    color: white;
+    height: auto;
+}
+.Formbox /*Caixa de formulário*/
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #04453c;
+    width: 400px;
+    margin: 0 50px ;
+    height: 400px;
+    position: relative;
+    top: -20px;
+    right: -15px
+
+    height: 400px;
+    gap: 30px;
+    border-radius: 20px;
+}
+.Formbox h2
+{
+color: rgb(72, 195, 170);
+}
+.Formbox input /*Preenchimento do formulário*/
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    height: 100%;
+    height: 35px;
+    width: 100%;
+    width: 200px;
+}
+.Formbox button /*botão para criar conta*/
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 50px;
+    width: 100%;    
+    max-width: 200px;
+    background-color: #037113;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+
+    
+
+}
+.Shadowbox /*sombra da formbox*/
+{
+    background-color: #022c26;
+    width: 430px;
+    margin: 50px auto 0;
+    height: 420px;
+    gap: 30px;
+    border-radius: 20px; 
+    position: relative;
+    right: 50px
+    
+}
+@media (max-width: 600px)
+
+
+   
+
+   
+
+             
